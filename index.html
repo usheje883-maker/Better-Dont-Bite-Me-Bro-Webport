@@ -93,22 +93,22 @@
                 const buildPath = "Build/";
 
                 const asmCode = await loadParts(
-                    buildPath + "Bite me bro web.asm.code.unityweb",
+                    buildPath + "Bite_me_bro_web.asm.code.unityweb",
                     3
                 );
 
                 const dataFile = await loadParts(
-                    buildPath + "Bite me bro web.data.unityweb",
+                    buildPath + "Bite_me_bro_web.data.unityweb",
                     4
                 );
 
                 const wasmCode = await loadParts(
-                    buildPath + "Bite me bro web.wasm.code.unityweb",
+                    buildPath + "Bite_me_bro_web.wasm.code.unityweb",
                     2
                 );
 
                 const jsonResponse = await fetch(
-                    buildPath + "Bite me bro web.json?v=6"
+                    buildPath + "Bite_me_bro_web.json?v=6"
                 );
 
                 if (!jsonResponse.ok) {
