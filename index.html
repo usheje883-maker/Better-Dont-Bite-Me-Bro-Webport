@@ -5,10 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Don't Bite Me Bro!</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.png">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js?v=4"></script>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/usheje883-maker/Better-Dont-Bite-Me-Bro-Webport@main/TemplateData/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/usheje883-maker/Better-Dont-Bite-Me-Bro-Webport@main/TemplateData/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/usheje883-maker/Better-Dont-Bite-Me-Bro-Webport@main/TemplateData/UnityProgress.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/usheje883-maker/Better-Dont-Bite-Me-Bro-Webport@main/Build/UnityLoader.js?v=4"></script>
     <style>
         #loadingMessage {
             position: fixed;
@@ -118,7 +118,7 @@
                     }
                 );
 
-                alert("Port By Noob_God2729");
+                try { alert("Port By Noob_God2729"); } catch (e) {}
 
                 function Resize() {
                     if (
@@ -155,8 +155,10 @@
 
             } catch (error) {
                 const message = document.getElementById("loadingMessage");
-                message.style.display = "flex";
-                message.textContent = "Game loading failed: " + error.message;
+                if (message) {
+                    message.style.display = "flex";
+                    message.textContent = "Game loading failed: " + error.message;
+                }
                 console.error(error);
             }
         }
