@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -10,27 +9,6 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js?v=4"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Bite_me_bro_web.json?v=6", {onProgress: UnityProgress});
-      alert("Port By Noob_God2729");
-      function Resize() {
-        if (document.fullscreenElement || document.webkitFullscreenElement) return;
-        var container = document.getElementById('gameContainer');
-        if (!gameInstance.Module || !gameInstance.Module.setCanvasSize) return;
-        gameInstance.Module.setCanvasSize(container.clientWidth, container.clientHeight);
-      }
-
-      function FullscreenChanged() {
-        if (!document.fullscreenElement && !document.webkitFullscreenElement) Resize();
-      }
-
-      gameInstance.Module.postRun.push(Resize);
-      window.addEventListener('resize', Resize);
-      document.addEventListener('fullscreenchange', FullscreenChanged);
-      document.addEventListener('webkitfullscreenchange', FullscreenChanged);
-    </script>
-  </head>
-  <body>
     <style>
         #loadingMessage {
             position: fixed;
