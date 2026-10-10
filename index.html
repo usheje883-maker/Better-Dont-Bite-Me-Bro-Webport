@@ -98,6 +98,9 @@
                 config.dataUrl = dataFile;
                 config.asmCodeUrl = asmCode;
                 config.wasmCodeUrl = wasmCode;
+                config.wasmFrameworkUrl = new URL(buildPath + "Bite_me_bro_web.wasm.framework.unityweb?v=2", window.location.href).href;
+                config.asmMemoryUrl = new URL(buildPath + "Bite_me_bro_web.asm.memory.unityweb", window.location.href).href;
+                config.asmFrameworkUrl = new URL(buildPath + "Bite_me_bro_web.asm.framework.unityweb", window.location.href).href;
 
                 const configBlob = URL.createObjectURL(
                     new Blob([JSON.stringify(config)], {
